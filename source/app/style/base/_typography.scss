@@ -1,0 +1,7 @@
+$px-small: 6px;
+$px-medium: $px-small * 2;
+$px-big: $px-medium * 2;
+
+h2 {
+  font-size: $px-big;
+}

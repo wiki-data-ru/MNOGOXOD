@@ -1,0 +1,10 @@
+@import "./background";
+@import "./center";
+
+#root {
+  background-color: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}

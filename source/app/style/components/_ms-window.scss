@@ -1,0 +1,19 @@
+@import "../sass-utils/variables";
+
+.ms-window {
+  position: absolute;
+  height: 200px;
+  width: 480px;
+  background-color: $win95-darkgrey;
+  border: solid 1px black;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ms-window-title {
+  height: 20px;
+  color: white;
+  width: 480px;
+  border: solid 1px $win95-darkgrey;
+  box-sizing: border-box;
+  background: linear-gradient(270deg, #1085d2 0%, #00007b 100%);
+}
