@@ -1,0 +1,61 @@
+{
+  "name": "mnogoxod",
+  "version": "0.1.0",
+  "description": "алатырь знаний, русская грамотность",
+  "source": "source/app/index.ts",
+  "scripts": {
+    "start": "parcel source/app/index.html",
+    "serve": "node /source/server/main.ts",
+    "test": "jest",
+    "lint": "eslint",
+    "check": "tsc --noEmit",
+    "build": "parcel build source/app/index.html",
+    "ci": "npm build && npm test && npm lint && npm check",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacksnow2k/azbuka.git"
+  },
+  "keywords": [
+    "azbuka",
+    "alphabet",
+    "symbols"
+  ],
+  "author": "Leonid Perlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blacksnow2k/azbuka/issues"
+  },
+  "homepage": "https://github.com/blacksnow2k/azbuka#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.2.0",
+    "@types/react": "^18.0.31",
+    "parcel-bundler": "^1.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-typescript-tsc": "^2.8.3",
+    "@types/jest": "^29.5.0",
+    "@types/react-dom": "^18.0.11",
+    "cssnano": "^4.1.11",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "parcel": "^2.8.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}

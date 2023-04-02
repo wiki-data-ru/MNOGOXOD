@@ -1,0 +1,17 @@
+@import "../sass-utils/sass-utils.scss";
+
+@media screen and (orientation: landscape) {
+  .center-stage {
+    height: 100vh;
+    width: 66vw;
+    background-color: $win95-grey;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .center-stage {
+    height: 100vh;
+    width: 100vw;
+    background-color: $win95-grey;
+  }
+}
